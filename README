@@ -1,7 +1,7 @@
 geo
 ---
-
-Small and simple library for geo location tasks.
+Small and simple library in the form of an OSGi bundle for geo location tasks.
 
 Currently includes a representation of a location and the possibility to measure distances between locations.
-The distance calculation algorithms are pluggable. Currently, only haversine is implemented.
+The distance calculation algorithms are pluggable.
+

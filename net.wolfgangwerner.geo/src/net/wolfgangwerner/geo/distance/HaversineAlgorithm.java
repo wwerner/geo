@@ -6,7 +6,7 @@ import net.wolfgangwerner.geo.model.GeoPoint;
 public class HaversineAlgorithm implements DistanceCalculationAlgorithm {
 
 	@Override
-	public double calculateDistance(GeoPoint from, GeoPoint to) {
+	public double distanceInKilometres(GeoPoint from, GeoPoint to) {
 		double lat1 = from.getLatitude();
 		double lat2 = to.getLatitude();
 		double lon1 = from.getLongitude();

@@ -1,9 +1,17 @@
 package net.wolfgangwerner.geo.distance;
 
 import net.wolfgangwerner.geo.model.GeoPoint;
+import static net.wolfgangwerner.geo.GeoConstants.DEFAULT_ALGORITHM;;
 
+/**
+ * Performs distance calculations between two locations.
+ * The calculation strategy can be changed.
+ * 
+ * @author wwerner
+ */
 public class DistanceCalculator {
-	private DistanceCalculationAlgorithm algorithm = new HaversineAlgorithm();
+
+	private DistanceCalculationAlgorithm algorithm = DEFAULT_ALGORITHM;
 
 	public DistanceCalculator() {
 		super();
@@ -14,7 +22,11 @@ public class DistanceCalculator {
 		this.algorithm = algorithm;
 	}
 
-	public double calculateDistance(GeoPoint from, GeoPoint to) {
-		return this.algorithm.calculateDistance(from, to);
+	public void setAlgorithm(DistanceCalculationAlgorithm algorithm) {
+		this.algorithm = algorithm;
+	}
+
+	public double distanceInKilometres(GeoPoint from, GeoPoint to) {
+		return this.algorithm.distanceInKilometres(from, to);
 	}
 }
