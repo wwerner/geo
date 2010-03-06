@@ -1,7 +1,7 @@
 package net.wolfgangwerner.geo.test;
 
 import static org.junit.Assert.assertEquals;
-import net.wolfgangwerner.geo.distance.HaversineAlgorithm;
+import net.wolfgangwerner.geo.distance.algorithms.HaversineAlgorithm;
 import net.wolfgangwerner.geo.distance.algorithms.DistanceCalculationAlgorithm;
 import net.wolfgangwerner.geo.distance.algorithms.GreatCircleDistanceAlgorithm;
 import net.wolfgangwerner.geo.model.GeoPoint;

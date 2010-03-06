@@ -1,6 +1,6 @@
 package net.wolfgangwerner.geo;
 
-import net.wolfgangwerner.geo.distance.HaversineAlgorithm;
+import net.wolfgangwerner.geo.distance.algorithms.HaversineAlgorithm;
 import net.wolfgangwerner.geo.distance.algorithms.DistanceCalculationAlgorithm;
 import net.wolfgangwerner.geo.distance.algorithms.GreatCircleDistanceAlgorithm;
 

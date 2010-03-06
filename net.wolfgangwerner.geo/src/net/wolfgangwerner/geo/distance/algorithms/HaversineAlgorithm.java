@@ -1,4 +1,4 @@
-package net.wolfgangwerner.geo.distance;
+package net.wolfgangwerner.geo.distance.algorithms;
 
 import static net.wolfgangwerner.geo.GeoConstants.EARTH_RADIUS_IN_KM;
 import net.wolfgangwerner.geo.distance.algorithms.DistanceCalculationAlgorithm;
