@@ -1,8 +1,5 @@
 package net.wolfgangwerner.geo.model;
 
-import net.wolfgangwerner.geo.distance.DistanceCalculationAlgorithm;
-import static net.wolfgangwerner.geo.GeoConstants.DEFAULT_ALGORITHM;
-
 public class GeoPoint {
 	double latitude;
 	double longitude;
