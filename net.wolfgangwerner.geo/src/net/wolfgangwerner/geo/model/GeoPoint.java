@@ -37,13 +37,20 @@ public class GeoPoint {
 		this.longitude = longitude;
 	}
 
-	public double distanceInKilometresTo(GeoPoint to,
-			DistanceCalculationAlgorithm algorithm) {
-		return algorithm.distanceInKilometres(this, to);
+	@Override
+	public boolean equals(Object obj) {
+		if (!(obj instanceof GeoPoint))
+			return false;
+
+		GeoPoint p = (GeoPoint) obj;
+		return (p.getLatitude() == getLatitude() && p.getLongitude() == getLongitude());
 	}
 
-	public double distanceInKilometresTo(GeoPoint to) {
-		return DEFAULT_ALGORITHM.distanceInKilometres(this, to);
+	@Override
+	public int hashCode() {
+		return Double.valueOf(latitude).hashCode()
+				^ Double.valueOf(longitude).hashCode();
+
 	}
 
 }
