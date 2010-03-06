@@ -5,6 +5,9 @@ import static org.junit.Assert.*;
 import java.util.Arrays;
 import java.util.Comparator;
 
+import net.wolfgangwerner.geo.GeoConstants;
+import net.wolfgangwerner.geo.distance.DistanceCalculationAlgorithm;
+import net.wolfgangwerner.geo.distance.DistanceCalculator;
 import net.wolfgangwerner.geo.distance.GeoPointDistanceComparator;
 import net.wolfgangwerner.geo.model.GeoPoint;
 
@@ -44,6 +47,18 @@ public class DistanceComparisonTest {
 		GeoPoint[] shuffelled = new GeoPoint[] { munich, stuttgart, berlin };
 
 		Arrays.sort(shuffelled, new GeoPointDistanceComparator(zurich));
+
+		assertArrayEquals(shuffelled, increasingDistanceToZurich);
+	}
+
+	@Test
+	public void testSortArrayWithGreatCircleAlg() {
+		GeoPoint[] increasingDistanceToZurich = new GeoPoint[] { stuttgart,
+				munich, berlin };
+		GeoPoint[] shuffelled = new GeoPoint[] { munich, stuttgart, berlin };
+
+		Arrays.sort(shuffelled, new GeoPointDistanceComparator(zurich,
+				new DistanceCalculator(GeoConstants.GREAT_CIRCLE_ALGORITHM)));
 
 		assertArrayEquals(shuffelled, increasingDistanceToZurich);
 	}
