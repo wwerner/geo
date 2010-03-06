@@ -1,7 +1,7 @@
 package net.wolfgangwerner.geo.distance;
 
+import static net.wolfgangwerner.geo.GeoConstants.DEFAULT_ALGORITHM;
 import net.wolfgangwerner.geo.model.GeoPoint;
-import static net.wolfgangwerner.geo.GeoConstants.DEFAULT_ALGORITHM;;
 
 /**
  * Performs distance calculations between two locations.
