@@ -1,6 +1,7 @@
 package net.wolfgangwerner.geo.distance;
 
 import static net.wolfgangwerner.geo.GeoConstants.DEFAULT_ALGORITHM;
+import net.wolfgangwerner.geo.distance.algorithms.DistanceCalculationAlgorithm;
 import net.wolfgangwerner.geo.model.GeoPoint;
 
 /**

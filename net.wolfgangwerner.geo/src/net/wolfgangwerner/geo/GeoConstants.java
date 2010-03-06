@@ -1,8 +1,8 @@
 package net.wolfgangwerner.geo;
 
-import net.wolfgangwerner.geo.distance.DistanceCalculationAlgorithm;
-import net.wolfgangwerner.geo.distance.GreatCircleDistanceAlgorithm;
 import net.wolfgangwerner.geo.distance.HaversineAlgorithm;
+import net.wolfgangwerner.geo.distance.algorithms.DistanceCalculationAlgorithm;
+import net.wolfgangwerner.geo.distance.algorithms.GreatCircleDistanceAlgorithm;
 
 public class GeoConstants {
 	public static double EARTH_RADIUS_IN_KM = 6371;

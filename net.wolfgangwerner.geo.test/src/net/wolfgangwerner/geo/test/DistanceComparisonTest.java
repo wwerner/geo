@@ -6,9 +6,9 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 import net.wolfgangwerner.geo.GeoConstants;
-import net.wolfgangwerner.geo.distance.DistanceCalculationAlgorithm;
 import net.wolfgangwerner.geo.distance.DistanceCalculator;
 import net.wolfgangwerner.geo.distance.GeoPointDistanceComparator;
+import net.wolfgangwerner.geo.distance.algorithms.DistanceCalculationAlgorithm;
 import net.wolfgangwerner.geo.model.GeoPoint;
 
 import org.junit.Test;
